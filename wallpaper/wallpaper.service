@@ -1,0 +1,10 @@
+[Unit]
+Description=Desktop slideshow with graceful fade
+After=systemd-user-sessions.service
+
+[Install]
+WantedBy=multi-user.target
+
+[Service]
+Type=simple
+ExecStart=python3 /home/user/Customization/wallpaper.py
