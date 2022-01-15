@@ -1,11 +1,11 @@
 # Readme
 
-> Simple solution to iterate over wallpapers in a folder, shotwell had a not so nice transition between the images
+> Simple solution for linux to iterate over wallpapers in a folder, shotwell had a not so nice transition between the images
 
 ## Requirements
 
 - Python
-- Folder with some nice wallpapers
+- Folder with some nice wallpapers#
 
 ## Setup
 
