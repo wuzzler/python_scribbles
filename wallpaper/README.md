@@ -1,4 +1,4 @@
-# Readme
+# wallpaper slideshow
 
 > Simple solution for linux to iterate over wallpapers in a folder, shotwell had a not so nice transition between the images
 
@@ -16,6 +16,7 @@ Enable the service for your user via `systemctl --user enable wallpaper.service`
 
 Check the python code. All files from the folder are loaded and initially added to a list, then verified if they are actually an image. After that the script loops through the images.
 
-## Improvements
+## Improvements/BugFixes
 
 - [ ] Wallpapers in other format than landscape are not fitted into the size of the desktop
+- [ ] Some images do not load (either bcs of format or something else)
