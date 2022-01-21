@@ -26,7 +26,7 @@ def getSnapshotLinks(targetUrl, years):
                 # check snapshot time per day
                 for snapshot in r.json()['items']:
                     finalURL = '{}{}{:04d}{:06d}/{}'.format(snapshotBaseURL, y, day[0], snapshot[0], targetUrl)
-                    snapshotLinks.append(finalURL)
+                    snapshotLinks.append((finalURL, y, day[0], snapshot[0]))
             except Exception as e:
                 print('[ e ] Error on url: {}'.format('{}{}&date={}{:04d}'.format(archiveURL, targetUrl, y, day[0])))
     
