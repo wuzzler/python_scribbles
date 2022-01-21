@@ -1,4 +1,4 @@
-# README - 'waybackSpider'
+# 'waybackSpider'
 
 This tool queries `web.archive.org` (waybackmachine) for the snapshot links of an archived URL.
 
