@@ -37,7 +37,8 @@ def getSnapshotLinks(qin, qout, targetUrl):
 
             for r in res.json()['items']:
                 finalURL = '{}{}{:04d}{:06d}/{}'.format(snapshotBaseURL, url[1], url[2], r[0], targetUrl)
-                qout.put(finalURL)
+                # put also Year/Date/Time into the output!
+                qout.put((finalURL, url[1], url[2], r[0]))
             q.task_done()
 
         except Exception as e:
