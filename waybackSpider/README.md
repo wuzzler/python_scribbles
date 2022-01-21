@@ -10,6 +10,10 @@ Take into consideration: the wayback machine is rather slow, the queries of the 
 
 - no additional requirements needed
 
+## Versions
+
+There is a singlethread version and a multithread version.
+
 ## usage
 
 ```bash
