@@ -5,7 +5,7 @@ import os
 import time
 
 wpPath = '/home/user/Pictures/Wallpaper/'
-allowedFiles = ['jpeg', 'png', 'webp']
+allowedFiles = ['jpeg', 'png']
 
 def initialCheck():
     # load the path of all files
@@ -27,7 +27,7 @@ if __name__ == '__main__':
     
     # let it run
     while True:
-        os.system('/usr/bin/gsettings set org.gnome.desktop.background picture-uri {}'.format((images[idx])))
+        os.system('/usr/bin/gsettings set org.gnome.desktop.background picture-uri "{}"'.format((images[idx])))
         idx += 1
         if idx == maxctr:
             idx = 0
